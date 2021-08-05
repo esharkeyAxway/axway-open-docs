@@ -96,4 +96,4 @@ For details on updating the Cassandra server configuration, see [Configure a hig
 For more details on Apache Cassandra, see the following:
 
 * [Apache Cassandra](http://cassandra.apache.org/) documentation.
-* [Datastax](http://docs.datastax.com/en/cassandra/2.2/) documentation.
+* [Datastax](https://docs.datastax.com/en/cassandra-oss/3.x/index.html) documentation.
