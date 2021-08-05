@@ -72,7 +72,7 @@ You can enable Cassandra debug logging using any of the following approaches:
   You can specify a `logger` in the `cassandra/conf/logback.xml` configuration file as follows:
   
   ```
-  <logger name "org.apache.cassandra.transport" level=DEBUG/>
+  <logger name="org.apache.cassandra.transport" level=DEBUG/>
   ```
 
 * **nodetool**
