@@ -22,6 +22,10 @@ Any custom `.fed` files deployed to a container must be upgraded using [upgradec
 
 The following new features and enhancements are available in this update.
 
+### Elastic-Stack Logging is available for API Gateway
+
+The Elastic-Stack (Elasticsearch, Logstash, and Kibana) solution is now production-ready for you to integrate with your API Gateway. For more information see, [Configure Elastic-Stack Logging](/docs/apim_administration/apigtw_admin/logging/#configure-elastic-stack-logging).
+
 ### placeholder
 
 placeholder
