@@ -38,9 +38,9 @@ It is now possible to deploy YAML configuration stores in the API Gateway Manage
 
 It is important, especially when upgrading from an earlier version, to be aware of the following changes in the behavior or operation of the product in this update, which may impact on your current installation.
 
-### Important changes placeholder
+### McAfee Anti-Virus filter has been retired
 
-placeholder
+The McAfee Anti-Virus filter has been retired in this release. This means that the filter will no longer be available to use when creating policies in Policy Studio. Existing configurations that use the filter will cause a critical warning when upgraded in Policy Studio or with an upgrade tool such as projupgrade. It is important that the McAfee Anti-Virus filter is replaced with the ICAP virus scan filter, or removed entirely. It will still be possible to deploy upgraded config containing the retired McAfee filter, and updated gateways will continue to run existing deployed configuration, but the McAfee filter will cause a warning in gateway trace files and will always return a fail response.
 
 ### Notice of schedule change for updates
 <!-- _Brian Lynch to review this section, whether it's needed -->
