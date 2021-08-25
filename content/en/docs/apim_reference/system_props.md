@@ -431,3 +431,4 @@ Axway-defined Java system properties introduced in the 7.7 20210830 release
 | ------------------------------------------------ | ----------- | ------------- |
 |jdk.xml.entityExpansionLimit | API Gateway |Specifies the XML Schema validation limit for the number of entity expansions. Default value: 64000. |
 |jdk.xml.maxOccurLimit |  API Gateway | Specifies the XML Schema validation limit for the number of content model nodes. Default value: 5000. |
+|com.vordel.dwe.file.Service.includeConfDirectory | API Gateway | Specifies whether or not `conf-dir` and `envSettings.props` are included in the output of the API Gateway File API. |
