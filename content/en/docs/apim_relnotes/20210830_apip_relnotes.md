@@ -58,11 +58,24 @@ This version of API Portal includes:
 
 ### Fixed security vulnerabilities
 
-table
+| Internal ID | Case ID | CVE Identifier | Description                                                                                                                                                                                                                                         |
+| ----------- | ------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| IAP-4553    |         |                | **Issue**: API Portal was using older versions of Highcharts JS and Daterangepicker libraries. **Resolution**: Highcharts JS was upgraded to v9.1.2. Daterangepicker was upgrated to v3.1.0.                                                                            |
+| IAP-3176    |         |                | **Issue**: The maximum number of unicode characters permitted in passwords was 33. **Resolution**: Passwords now can have 64 or more unicode characters.                                                                                                    |
+| IAP-4552    | 1280382 |                | **Issue**: When CSP is disabled a reflected XSS is possible in API Details. **Resolution**: The reflected XSS vulnerability has been successfully remediated using proper sanitisation.                                                                     |
+| IAP-4513    | 1275480 | CVE-2021-26034 | **Issue**: API Portal May release was released with Joomla version 3.9.26, which was [found to be vulnerable](https://www.joomla.org/announcements/release-news/5836-joomla-3-9-27.html). **Resolution**: Joomla was updated to version 3.9.29. |
+| IAP-4569    | 1284337 |                | **Issue**: API Portal contains deprecated code, which uses deprecated PHP functions. **Resolution**: Even though this code wasn't being used, it uses deprecated security PHP functions. Therefore, it is removed from the code base now.                    |
 
 ### Other fixed issues
 
-table of issues
+| Internal ID | Case ID | Description                                                                                                                                                                                                                                                                                                                                         |
+| ----------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| IAP-3883    |         | **Issue**: When a user is added to a new organization while still logged in API Portal, the Applications Catalog page shows an empty organization column for the applications of the newly-added organization. **Resolution**: When elastic search is enabled, the organization name will always be shown for each application from the Applications Catalog page. |
+| IAP-4297    | 1233608 | **Issue**: When the Swagger definition has properties, which are empty objects, API Portal transformed them to empty arrays, which invalidated the definition and displayed alert messages. **Resolution**: API Portal respects the definition as it comes and does not modify it.                                                                          |
+| IAP-4325    |         | **Issue**: Multi-column Swagger UI layout navigation is not working when the method name includes slash character. **Resolution**: Multi-column Swagger UI layout navigation is working properly when the method name includes slash character.                                                                                                             |
+| IAP-4383    | 1264453 | **Issue**: An error is shown on API details page when API Portal tag is used as "Show APIs with tags" value. **Resolution**: API Portal tags can be used as "Show APIs with tags" value.                                                                                                                                                                    |
+| IAP-4477    | 1253753 | **Issue**: Values of custom properties of type `switch` are not shown on View User profile page. **Resolution**: Custom properties of type `switch` are properly shown on View User profile page.                                                                                                                                                           |
+| IAP-4524    | 1273554 | **Issue**: API Portal was adding a slash in the Origin header value when an API endpoint is executed. **Resolution**: No slash is added in the Origin header value when an API endpoint is executed.                                                                                                                                                        |
 
 ## Known issues
 
@@ -78,7 +91,7 @@ After a recent bug fix in API Manager (RDAPI-20021), the `Authenticate to Master
 
 Alternatively you can take the updated `AuthenticateToMaster` policy and apply again your configurations.
 
-Related Issue:IAP-3435
+Related issue:IAP-3435
 
 ### Page layout and alignment for Arabic language
 
@@ -91,7 +104,7 @@ Changing the API Portal language to Arabic (or any other right to left language)
 5. Change **Development Mode** to `ON`.
 6. Click **Save** and click **Close** to close the template style.
 
-Related Issue: IAP-308
+Related issue: IAP-308
 
 ## Documentation
 
