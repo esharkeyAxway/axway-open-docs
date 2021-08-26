@@ -26,10 +26,6 @@ The following new features and enhancements are available in this update.
 
 The Elastic-Stack (Elasticsearch, Logstash, and Kibana) solution is now production-ready for you to integrate with your API Gateway. For more information see, [Configure Elastic-Stack Logging](/docs/apim_administration/apigtw_admin/logging/#configure-elastic-stack-logging).
 
-### placeholder
-
-placeholder
-
 ### YAML configuration store
 
 It is now possible to deploy YAML configuration stores in the API Gateway Manager web UI on port 8090. See [Manage domain topology in API Gateway Manager](/docs/apim_administration/apigtw_admin/managetopology/#deploy-a-yaml-deployment-package)
@@ -40,23 +36,23 @@ It is important, especially when upgrading from an earlier version, to be aware 
 
 ### McAfee Anti-Virus filter has been retired
 
-The McAfee Anti-Virus filter has been retired in this release. This means that the filter will no longer be available to use when creating policies in Policy Studio. Existing configurations that use the filter will cause a critical warning when upgraded in Policy Studio or with an upgrade tool such as projupgrade. It is important that the McAfee Anti-Virus filter is replaced with the ICAP virus scan filter, or removed entirely. It will still be possible to deploy upgraded config containing the retired McAfee filter, and updated gateways will continue to run existing deployed configuration, but the McAfee filter will cause a warning in gateway trace files and will always return a fail response.
+The McAfee Anti-Virus filter has been retired in this update. This means that this filter is no longer available to use when creating policies in Policy Studio. Existing configurations that use the filter will show a warning when upgraded in Policy Studio or with an upgrade tool, such as `projupgrade`.
+
+It is important that you update your policies and replace the McAfee Anti-Virus filter with the [Internet Content Adaption Protocol (ICAP)](/docs/apim_policydev/apigw_external_connections/common_icap_conf/) virus scan filter, or remove it entirely.
+
+It will still be possible to deploy upgraded configurations containing the retired McAfee filter, and updated gateways will continue to run existing deployed configuration, but the McAfee filter, now deprecated, will show a warning in the gateway trace files and will always return a fail response.
 
 ### Notice of schedule change for updates
-<!-- _Brian Lynch to review this section, whether it's needed -->
+
 The cadence of the updates for API Gateway, API Manager, and API Portal has changed. From the August update onwards, the update schedule follows a three months release cadency
 
 ## Deprecated features
 
 As part of our software development life cycle we constantly review our API Management offering. In this update, the following capabilities have been deprecated:
 
-### Deprecated changes placeholder
-
-placeholder
-
 ### Antivirus filters
-<!-- Brian Lynch to review this section, whether it's needed -->
-In the [January 2020](/docs/apim_relnotes/20200130_apimgr_relnotes/) update, we announced the deprecation of all the Antivirus filters in API Gateway. This is a reminder that in August 2021 we will remove the Antivirus filters from API Gateway. So, we recommend you to use the API Gateway's ICAP capability, which allows the gateway to integrate with ICAP capable external virus scanners.
+
+The McAfee Anti-Virus filter has been retired in this update.
 
 ### End of Support notices
 
