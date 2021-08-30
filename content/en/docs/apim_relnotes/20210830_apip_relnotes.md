@@ -21,9 +21,19 @@ API Portal is available as a software installation or a virtualized deployment i
 
 ## New features and enhancements
 
-There are no new feature or enhancements in this update. This is a maintenance update consisting of defect fixes.
+The following new features and enhancements are available in this update.
 
-For a complete list of fixed issues, see [Fixed issues](#fixed-issues) section.
+### Pagination support for API and Applications catalogs
+
+The API and Applications catalogs now support pagination controls to allow a better experience with catalog management and to improve performance. The pagination capability requires a connection to an Elasticsearch instance. For more information, see [Configure Elasticsearch in API Portal](/docs/apim_installation/apiportal_install/install_software_elastic).
+
+{{< alert title="Note" color="primary" >}}Pagination is only available for software installation of API Portal. This is not available for API Portals deployed in containers.{{< /alert >}}
+
+### Database password encryption improvements
+
+The passphrase for database password encryption is stored encrypted.
+
+Now, the passphrase typed in the command line is masked. Then, the user is asked to verify the passphrase (type the same passphrase to confirm), and if the re-type of the passphrase does not match the passphrase typed, the command line displays an error message.
 
 ## Limitations of this update
 
