@@ -28,7 +28,7 @@ The Elastic-Stack (Elasticsearch, Logstash, and Kibana) solution is now producti
 
 ### YAML configuration store
 
-It is now possible to deploy YAML configuration stores in the API Gateway Manager web UI on port 8090. See [Manage domain topology in API Gateway Manager](/docs/apim_administration/apigtw_admin/managetopology/#deploy-a-yaml-deployment-package)
+It is now possible to deploy [YAML configuration](/docs/apim_yamles/) stores in the API Gateway Manager web UI on port 8090. For more information, see [Manage domain topology in API Gateway Manager](/docs/apim_administration/apigtw_admin/managetopology/#deploy-a-yaml-deployment-package).
 
 ## Important changes
 
