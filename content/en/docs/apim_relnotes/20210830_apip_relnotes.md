@@ -53,6 +53,10 @@ There are no major changes in this update.
 
 There are no deprecated features in this update.
 
+## End of support notices
+
+There are no end of support notices in this update.
+
 ## Removed features
 
 <!-- To stay current and align our offerings with customer demand and best practices, Axway might discontinue support for some capabilities. As part of this review, the following features have been removed: -->
@@ -118,18 +122,10 @@ Related issue: IAP-308
 
 ## Documentation
 
-<!-- This section describes documentation enhancements and related documentation.
-
-### Documentation enhancements -->
-
-There are no major changes in this update.
-
-### Related documentation
-
 To find all available documentation for this product version:
 
 1. Go to [Manuals on the Axway Documentation portal](https://docs.axway.com/bundle).
-2. In the left pane Filters list, select your product or product version.
+2. In the left pane **Filters** list, select your product or product version.
 
 Customers with active support contracts need to log in to access restricted content.
 

@@ -66,13 +66,13 @@ As part of our software development life cycle we constantly review our API Mana
 
 The McAfee Anti-Virus filter has been retired in this update.
 
-### End of Support notices
+## End of support notices
 
 The following items are end of support (EOS):
 
 * placeholder
 
-### Removed features
+## Removed features
 
 <!-- To stay current and align our offerings with customer demand and best practices, Axway might discontinue support for some capabilities. As part of this review, the following features have been removed: -->
 
@@ -230,18 +230,10 @@ Related Issue: RDAPI-22218
 
 ## Documentation
 
-<!-- This section describes documentation enhancements and related documentation.
-
-### Documentation enhancements -->
-
-There are no major changes in this update.
-
-### Related documentation
-
 To find all available documentation for this product version:
 
 1. Go to [Manuals on the Axway Documentation portal](https://docs.axway.com/bundle).
-2. In the left pane Filters list, select your product or product version.
+2. In the left pane **Filters** list, select your product or product version.
 
 Customers with active support contracts need to log in to access restricted content.
 
