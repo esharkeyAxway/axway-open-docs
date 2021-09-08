@@ -95,6 +95,32 @@ This version of API Portal includes:
 
 The following are known issues for this update.
 
+### Elasticsearch datastore is not updated immediately after approving applications in API Portal
+
+For API Portals connected to an Elasticsearch server, the Elastic index is not automatically updated after an application is approved. As a result, the application is listed in *Pending* state in the applications catalog until the next execution of scheduled indexation cron job.
+
+You can perform the following steps to manually trigger the indexation of the applications:
+
+1. In JAI, click **Components > API Portal > Elasticsearch Settings**.
+2. Click **Index Applications now**.
+
+For more information, see [Configure Elasticsearch in API Portal](/docs/apim_installation/apiportal_install/install_software_elastic).
+
+Related issue: IAP-4638
+
+### Application is not immediately visible in the applications catalog when it is created and it is in pending state
+
+For API Portals connected to an Elasticsearch server, the Elastic index is not automatically updated after an application is created in *Pending* state. As a result, the application is not listed in the applications catalog until the next execution of scheduled indexation cron job.
+
+You can perform the following steps to manually trigger the indexation of the applications:
+
+1. In JAI, click **Components > API Portal > Elasticsearch Settings**.
+2. Click **Index Applications now**.
+
+For more information, see [Configure Elasticsearch in API Portal](/docs/apim_installation/apiportal_install/install_software_elastic).
+
+Related issue: IAP-4639
+
 ### When Multi Manager feature is configured, API Portal users are no longer able to login
 
 After a recent bug fix in API Manager (RDAPI-20021), the `Authenticate to Master` policy is no longer working after upgrading from releases earlier than [API Portal July 2020](/docs/apim_relnotes/20200730_apip_relnotes/). To fix this, perform the following steps:
