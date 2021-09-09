@@ -121,6 +121,12 @@ For more information, see [Configure Elasticsearch in API Portal](/docs/apim_ins
 
 Related issue: IAP-4639
 
+### Sorting the Applications catalog works only on the current page
+
+API Portals connected to an Elasticsearch server have pagination enabled in the Applications catalog. Sorting the list of applications works only on the current page. If you go to the next or previous page, the sorting is lost and you have to apply it again every time you navigate to another page.
+
+Related Issue: IAP-4289
+
 ### When Multi Manager feature is configured, API Portal users are no longer able to login
 
 After a recent bug fix in API Manager (RDAPI-20021), the `Authenticate to Master` policy is no longer working after upgrading from releases earlier than [API Portal July 2020](/docs/apim_relnotes/20200730_apip_relnotes/). To fix this, perform the following steps:
