@@ -65,6 +65,22 @@ After connecting API to Elasticsearch, populate the crontab fields to create a s
 
 After that, APIs and Applications will automatically reindex based on the cron schedule setting.
 
+### Considerations before creating a schedule
+
+Before you configure your time schedule interval for indexing APIs and Applications, consider the following to help you to decide on what are the most appropriate schedule indexation intervals for your environment.
+
+* How long it takes to push the data to the index?
+
+This will depend on some aspects like the number of APIs and Applications, infrastructure resources (your server's calculating power), and network capabilities.
+
+To discover this time, you can [trigger the indexation manually](#push-data-to-elasticsearch-manually) and monitor how long it takes for the process to end. You must perform this for APIs and Applications separately because they have different schedules.
+
+* How often does your data in API Manager gets changed?
+
+If your data changes frequently (adding, updating, or deleting APIs and Applications) we recommend that you use the minimum required time period (the value that you found when monitoring the process).
+
+If your data does not change frequently, you can configure longer intervals for the scheduled indexation to run, for example, every night, or even once every three days or so.
+
 ## Push data to Elasticsearch manually
 
 If you are using API Portal in containers, you can trigger APIs and Applications indexing manually.
