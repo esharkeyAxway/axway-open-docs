@@ -26,6 +26,14 @@ The following new features and enhancements are available in this update.
 
 placeholder
 
+### Client Credentials can now be set as a Grant Type
+
+This allows clients to resource share from another server using a Client ID and a Cient Secret. For more information, see [Setting Grant type - Client Credentials](docs/apim_administration/apimgr_admin/api_mgmt_virtualize_web/#grant-type---client-credentials)
+
+### Upgraded to a New Menu Header
+
+A new customisable header has been integrated. To see the funcionality of the header, view [Amplify Menu Header](/docs/apim_administration/apimgr_admin/api_mgmt_custom/#customize-amplify-menu-header). To investigate the new customisable properties of the header, navigate to [Amplify Menu Header Properties](/docs/apim_administration/apimgr_admin/api_mgmt_custom/#amplify-menu-header-properties)
+
 ## Important changes
 
 It is important, especially when upgrading from an earlier version, to be aware of the following changes in the behavior or operation of the product in this update, which may impact on your current installation.
@@ -33,6 +41,10 @@ It is important, especially when upgrading from an earlier version, to be aware 
 ### placeholder 2
 
 placeholder
+
+### Python3 Migration
+
+Upgraded the Python EMT scripts from Python 2.7 to Python 3. For more information, see [Set up Your Docker Evironment](/docs/apim_installation/apigw_containers/docker_scripts_prereqs/#set-up-your-docker-environment)
 
 ## Deprecated features
 
