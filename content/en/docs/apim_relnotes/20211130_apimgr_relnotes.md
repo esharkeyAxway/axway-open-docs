@@ -26,9 +26,9 @@ The following new features and enhancements are available in this update.
 
 placeholder
 
-### Client Credentials can now be set as a Grant Type
+### Client Credentials can be set as a Grant Type
 
-This allows clients to resource share from another server using a Client ID and a Cient Secret. For more information, see [Setting Grant type - Client Credentials](/docs/apim_administration/apimgr_admin/api_mgmt_virtualize_web/#grant-type---client-credentials)
+This allows clients to share resources from another server using a Client ID and a Cient Secret. For more information, see [Setting Grant type - Client Credentials](/docs/apim_administration/apimgr_admin/api_mgmt_virtualize_web/#grant-type---client-credentials)
 
 ### Upgraded to a New Menu Header
 
